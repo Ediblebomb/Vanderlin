@@ -58,8 +58,6 @@
 			H.adjust_stat_modifier(STATMOD_JOB, STATKEY_STR, 2) // They need this to roll at least min STR for the Zwei.
 			H.adjust_skillrank(/datum/skill/combat/axesmaces, pick(2,3), TRUE) // Equal chance between skilled and average, can use a cudgel to beat less dangerous targets into submission
 			H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			if(H.age == AGE_OLD)
-				H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		if("Musket")
 			H.equip_to_slot_or_del(new /obj/item/gun/ballistic/revolver/grenadelauncher/pistol/musket, ITEM_SLOT_BACK_R, TRUE)
 			H.equip_to_slot_or_del(new /obj/item/ammo_holder/bullet, ITEM_SLOT_BELT_R, TRUE)
@@ -68,6 +66,4 @@
 			H.adjust_skillrank(/datum/skill/combat/firearms, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
 			if(H.age == AGE_OLD)
-				H.adjust_skillrank(/datum/skill/combat/firearms, 1, TRUE)
-				H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 				H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)

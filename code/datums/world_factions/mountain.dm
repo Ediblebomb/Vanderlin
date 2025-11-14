@@ -63,6 +63,7 @@
 		/datum/supply_pack/tools/thresher,
 		/datum/supply_pack/tools/plough,
 		/datum/supply_pack/tools/bucket,
+		/datum/supply_pack/weapons/iron/bayonet, //kind-of a tool
 		// Food - Hearty dwarven fare
 		/datum/supply_pack/food/meat,
 		/datum/supply_pack/food/drinks/blackgoat,
@@ -148,7 +149,8 @@
 		/datum/supply_pack/luxury/talkstone,
 		/datum/supply_pack/luxury/gold_plaque_belt,
 		/datum/supply_pack/weapons/ranged/puffer,
-		/datum/supply_pack/weapons/ammo/bullets
+		/datum/supply_pack/weapons/ammo/bullets,
+		/datum/supply_pack/weapons/ranged/musket
 	)
 
 /datum/world_faction/mountain_clans/initialize_faction_stock()
